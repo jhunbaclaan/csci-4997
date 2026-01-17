@@ -56,8 +56,8 @@ print("the next-to-last item in the squares list (should be 25):", squares[-2:])
 # A0-Part-3: matplotlib
 # """""""""""""""""""""""
 # print a graph of the squares list
-# plt.plot(# your code here)
-# plt.show()
+plt.plot(squares)
+plt.show()
 
 # this code is provided as an example. Make sure it works with your prior code
 integers = [1, 2, 3, 4, 5, 6]
