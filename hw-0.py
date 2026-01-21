@@ -93,14 +93,55 @@ plt.show()
 
 # """""""""""""""""""""""""
 # A0-Part-4: numpy arrays
-# to be added later
 # """""""""""""""""""""""""
+print("---------- A0-Part-4: numpy arrays ----------")
 
-# arange
+# some examples - you don't need to code: 
+# create a NumPy array using the numpy array() function and a list
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
 
-# slicing of a numpy array. Does it differ from slicing of a list? 
+myList = [1, 2, 3, 4, 5]
+print(myList)
+arr = np.array(myList)
+print(arr)               # note how the list is printed differently than the array
 
-# different ways to print a numpy array
+print(myList[1])
+print(arr[1])
 
+# numpy.arange
+print(np.arange(5))
+print(np.arange(5 , 10))  # integers from 5 to 9
 
+# some examples - you do need to code:
+
+# using numpy.arange create a NumPy array with integers from 5 to 10 inclusive 
+# your code here
+print("numpy array with integers 5 to 10 inclusive: ", np.arange(5,11))
+
+# using numpy arange, create then print a NumPy array named sequence
+# with floating-point numbers from 0 to 1.0, with a 0.1 interval
+# your code here
+sequences = np.arange(0.0, 1.1, 0.1)
+print("numpy array \"sequences\" (array from 0 to 1.0 with intervals of 0.1): ", sequences)
+
+# print the number of dimensions of sequences using the ndim attribute
+# print the datatype of sequences using the dtype attribute
+# print the number of elements in sequences using the size attribute
+# your code here
+print("number of dimensions in sequences: ", sequences.ndim)
+print("datatype of sequences: ", sequences.dtype)
+print("amount of elements in sequences: ", np.size(sequences))
+
+# using numpy arange, create then print a numpy array with integers from 10 to 1 inclusive,
+# using a negative step value to create the array in reverse order. 
+# your code here
+negativeInts = np.arange(10, 0, -1)
+print("numpy array \"negativeInts\" that goes from 10 to 1 inclusive, in descending order: ", negativeInts)
+
+# linspace
+# using numpy linspace, create and print a numpy array with 20 numbers from 0 to 1, inclusive
+# your code here
+twentyInclusive = np.linspace(0,1, num=20)
+print("numpy array created with linspace: ", twentyInclusive)
 
