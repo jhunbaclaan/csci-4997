@@ -10,7 +10,7 @@ from matplotlib import collections as matcoll
 # """"""""""""""""""""
 # A0-Part-1: lists
 # """"""""""""""""""""
-
+print("---------- A0-Part-1: lists ----------")
 # create a list of the squares of integers from 1 to 5, and print the list
 # nothing to do for this, it's already done. 
 squares  = [1, 4, 9, 16, 25]
@@ -39,7 +39,7 @@ print("full list of oddItems:", oddItems)
 # """"""""""""""""""""
 # A0-Part-2: slicing.
 # """"""""""""""""""""
-
+print("---------- A0-Part-2: slicing ----------")
 # Using slicing, print the second, third, and fourth items in the squares list
 # your code here
 print("second, third, and fourth items of the squares list:", squares[1:4])
@@ -55,6 +55,7 @@ print("the next-to-last item in the squares list (should be 25):", squares[-2:])
 # """""""""""""""""""""""
 # A0-Part-3: matplotlib
 # """""""""""""""""""""""
+print("---------- A0-Part-3: matplotlib ----------")
 # print a graph of the squares list
 plt.plot(squares)
 plt.show()
@@ -145,3 +146,32 @@ print("numpy array \"negativeInts\" that goes from 10 to 1 inclusive, in descend
 twentyInclusive = np.linspace(0,1, num=20)
 print("numpy array created with linspace: ", twentyInclusive)
 
+# """""""""""""""""""""""
+# A0-Part-5: tuples
+# """""""""""""""""""""""
+print("---------- A0-Part-5 tuples ----------")
+
+# create a tuple named nums with (0, 1, 2, 3, 4, 5), and print it
+# your code here
+nums = (0, 1, 2, 3, 4, 5)
+print("all elements of a tuple named \"nums\": ", nums)
+
+# print the third item in nums using indexing
+# your code here
+print("third item in nums: ", nums[2])
+
+# print the last two items in nums using negative slicing
+# your code here
+print("last two items in nums: ", nums[-2:])
+# print the odd numbers in nums using slicing
+# your code here
+print("odd numbers in nums: ", nums[1::2])
+# using the tuple constructor create a tuple called fives containing 10, 15, 20, 25, and
+# print the even numbers in it using slicing
+# your code here
+fives = tuple(range(10,30,5))
+print("even numbers in a a tuple named \"fives\": ", fives[::2])
+
+# print the type of fives
+# your code here
+print("data type of fives: ", type(fives))
