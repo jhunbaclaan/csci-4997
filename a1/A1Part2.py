@@ -27,4 +27,14 @@ def minMaxAudio(inputFile):
         A tuple of the minimum and the maximum value of the audio samples, like: (min_val, max_val)
     """
     ## Your code here
+    # reusing the directory code from part 1
+    directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '4997-tools-v4', 'sounds'))
+    # join the file to the directory
+    inputFile = os.path.join(directory, inputFile)
+    
+    # read
+    fs, x = wavread(inputFile)
+    # get min and max, return
+    array = tuple([x.min(), x.max()])
+    return array
 
