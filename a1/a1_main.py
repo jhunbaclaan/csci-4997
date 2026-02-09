@@ -4,6 +4,7 @@
 
 # refuses to run in vsc, so use console
 # note to self: please please PLEASE run with THIS ---> python3 -m a1.a1_main
+# this wont be relevant to you if your regular python installation was installed to PATH correctly but... yeah dont ask
 
 # tester file for all a1 methods
 
